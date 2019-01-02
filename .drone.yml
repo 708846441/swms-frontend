@@ -1,0 +1,13 @@
+workspace:
+  base: /front
+  path: src/github.com/derFischer/swms-frontend
+pipeline:
+  build:
+    commands:
+      - npm install
+  publish:
+    image: plugins/docker
+    repo: derFischer/swms-frontend
+    tags: ["latest", "v2"]
+    secrets: [ docker_username, docker_password ]
+    dockerfile: Dockerfile
