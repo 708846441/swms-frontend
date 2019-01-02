@@ -3,7 +3,7 @@ workspace:
   path: src/github.com/derFischer/swms-frontend
 pipeline:
   build:
-    image: maven:3.6.0-jdk-8-alpine
+    image: npm.taobao.org
     commands:
       - npm install
   publish:
