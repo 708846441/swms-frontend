@@ -3,9 +3,10 @@ workspace:
   path: src/github.com/derFischer/swms-frontend
 pipeline:
   build:
-    image: node
+    image: node:latest
     commands:
       - npm install
+      - npm run-script build
   publish:
     image: plugins/docker
     repo: derFischer/swms-frontend
