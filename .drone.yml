@@ -3,7 +3,7 @@ workspace:
   path: src/github.com/derFischer/swms-frontend
 pipeline:
   build:
-    image: n
+    image: node
     commands:
       - npm install
   publish:
