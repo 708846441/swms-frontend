@@ -9,7 +9,7 @@ pipeline:
       - npm run-script build
   publish:
     image: plugins/docker
-    repo: swmsfrontend
+    repo: dingd/swmsfrontend
     tags: ["latest", "v2"]
     secrets: [ docker_username, docker_password ]
     dockerfile: Dockerfile
